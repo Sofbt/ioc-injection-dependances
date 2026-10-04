@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="dao" class="net.sofbt.demo.dao.DaoImpl"/>
+    <bean id="dao2" class="net.sofbt.demo.dao.DaoImplV2"/>
+
+    <!-- a- Injection via le constructeur -->
+    <bean id="metierConstructeur" class="net.sofbt.demo.metier.MetierConstructeur">
+        <constructor-arg ref="dao"/>
+    </bean>
+
+    <!-- b- Injection via le setter -->
+    <bean id="metierSetter" class="net.sofbt.demo.metier.MetierSetter">
+        <property name="dao" ref="dao2"/>
+    </bean>
+
+    <!-- c- Injection via l'attribut (Field) -->
+    <bean id="metierAttribut" class="net.sofbt.demo.metier.MetierAttribut">
+        <field name="dao" ref="dao"/>
+    </bean>
+</beans>
