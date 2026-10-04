@@ -1,3 +1,4 @@
+NOTE: README.md was made using the help of ClaudeAI.
 # Compte rendu — Inversion de contrôle et injection des dépendances
 
 Activité pratique reprenant l'exemple traité dans la vidéo
