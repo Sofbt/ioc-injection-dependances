@@ -1,0 +1,2 @@
+net.sofbt.ext.DaoImplV2
+net.sofbt.metier.MetierImpl
